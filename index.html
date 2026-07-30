@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pict-o-view — Privacy Policy</title>
-<meta name="description" content="Pict-o-view collects nothing. No accounts, no analytics, no servers — your photos and videos never leave your Mac.">
+<title>Pict-o-view — a fast, private photo &amp; video viewer for macOS</title>
+<meta name="description" content="Pict-o-view is a native macOS photo and video viewer built for browsing and culling large folders. No accounts, no analytics, nothing leaves your Mac.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="css/site.css">
@@ -93,69 +93,87 @@
       Pict-o-view
     </a>
     <nav class="site-nav" aria-label="Site">
-      <a href="index.html">Overview</a>
+      <a href="index.html" aria-current="page">Overview</a>
       <a href="help.html">Help</a>
       <a href="support.html">Support</a>
-      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="privacy.html">Privacy</a>
       <a class="btn" href="https://apps.apple.com/us/app/pict-o-view/id6789158521">Mac App Store</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="page-head">
-    <h1>Privacy Policy</h1>
-    <p class="lede">Pict-o-view · Last updated: <strong>July 9, 2026</strong></p>
+<main>
+  <section class="hero wrap wrap--wide">
+    <h1>Your photos, all yours.</h1>
+    <p class="lede">Pict-o-view is a native macOS viewer built for real folders of real photos — thousands at a time, browsed and culled at full speed, with nothing ever leaving your Mac.</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://apps.apple.com/us/app/pict-o-view/id6789158521">Get it on the Mac App Store</a>
+      <a class="btn btn--ghost" href="help.html">See what it does</a>
+    </div>
+    <p class="hero-note">Requires macOS 15 or later · No account · No analytics</p>
+
+    <div class="mock" role="img" aria-label="Illustration of the Pict-o-view window: a folder sidebar beside a grid of photo thumbnails.">
+      <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Iceland 2026</span></div>
+      <div class="mock-body" aria-hidden="true">
+        <div class="mock-side">
+          <b class="on"></b><em></em><em></em><b></b><em></em><b></b><em></em>
+        </div>
+        <div class="mock-grid">
+          <u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap wrap--wide">
+    <section class="section" id="features">
+      <h2><span class="tile t-blue"><svg aria-hidden="true"><use href="#i-grid"></use></svg></span> Built for whole shoots</h2>
+      <p class="section-note">Not a one-photo-at-a-time previewer. A place to work through a card full of frames.</p>
+      <ul class="cards" style="margin-top:1.4rem">
+        <li class="card">
+          <span class="tile t-mint"><svg aria-hidden="true"><use href="#i-flag"></use></svg></span>
+          <h3>Cull at speed</h3>
+          <p>Press <kbd>⌘K</kbd> and go: keep, reject, unmark, each key advancing to the next frame. Marks are saved, survive relaunches, and travel with your files when you move or rename them.</p>
+        </li>
+        <li class="card">
+          <span class="tile t-orange"><svg aria-hidden="true"><use href="#i-bolt"></use></svg></span>
+          <h3>Instant paging</h3>
+          <p>Neighbouring photos are decoded before you get to them, so holding an arrow key flies through a folder instead of stuttering through it.</p>
+        </li>
+        <li class="card">
+          <span class="tile t-green"><svg aria-hidden="true"><use href="#i-film"></use></svg></span>
+          <h3>MKV that just opens</h3>
+          <p>A built-in engine reads the container in memory and hands the video to your Mac's hardware decoder. No conversion, no temp files, multi-track audio and 5.1 surround included.</p>
+        </li>
+        <li class="card">
+          <span class="tile t-purple"><svg aria-hidden="true"><use href="#i-wand"></use></svg></span>
+          <h3>Edits that can't bite</h3>
+          <p>Rotate and crop are stored beside the file and applied on the fly. Your original is never rewritten — export a copy when you want the pixels baked in.</p>
+        </li>
+        <li class="card">
+          <span class="tile t-indigo"><svg aria-hidden="true"><use href="#i-folder"></use></svg></span>
+          <h3>Real file management</h3>
+          <p>Rename, move, copy, paste, drag between folders and out to other apps, sweep rejects to the Trash — the grid is a Finder that shows you the picture.</p>
+        </li>
+        <li class="card">
+          <span class="tile t-teal"><svg aria-hidden="true"><use href="#i-shield"></use></svg></span>
+          <h3>Private by construction</h3>
+          <p>No servers, no accounts, no telemetry, no network calls at all. It sees the folders you hand it and nothing else on your Mac.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="formats">
+      <h2><span class="tile t-indigo"><svg aria-hidden="true"><use href="#i-photo"></use></svg></span> Opens what your camera makes</h2>
+      <p class="section-note">Images: JPEG, PNG, HEIC, TIFF, animated GIF, WebP, BMP, plus camera RAW — CR2/CR3, NEF, ARW, DNG, RAF, ORF and more.</p>
+      <p class="section-note">Video: MOV, MP4 and M4V through macOS; MKV through the built-in engine; AVI, MPG, 3GP and TS/MTS/M2TS whenever macOS can decode what's inside. <a href="support.html#media">The full story is on the support page.</a></p>
+    </section>
+
+    <section class="section" id="more">
+      <h2><span class="tile t-blue"><svg aria-hidden="true"><use href="#i-mail"></use></svg></span> Questions?</h2>
+      <p class="section-note">The <a href="help.html">Help page</a> walks through every feature, the <a href="support.html">Support page</a> answers the common questions, and <a href="mailto:mugilanm7@gmail.com">mugilanm7@gmail.com</a> reaches a human.</p>
+    </section>
   </div>
-
-  <div class="callout" style="--tint: var(--teal)">
-    <p><strong>Pict-o-view is designed to keep your photos and videos entirely on your Mac.</strong> It does not collect, transmit, sell, or share any personal information, and it contains no advertising, analytics, or tracking of any kind.</p>
-  </div>
-
-  <section class="section">
-    <h2>Information we collect</h2>
-    <p><strong>None.</strong> Pict-o-view has no accounts, no sign-in, and no servers. We do not gather usage statistics, device identifiers, crash telemetry, or any other data about you or your use of the app.</p>
-  </section>
-
-  <section class="section">
-    <h2>Your files</h2>
-    <p>Pict-o-view only accesses folders you explicitly add or open. Access is granted by you through the standard macOS file picker or drag-and-drop, and is stored on your Mac as an Apple <em>security-scoped bookmark</em> so your chosen folders remain available across restarts. Your photos and videos never leave your device through Pict-o-view. We cannot see them, and neither can anyone else.</p>
-  </section>
-
-  <section class="section">
-    <h2>iCloud files</h2>
-    <p>If you open a photo or video stored in iCloud Drive that hasn't been downloaded yet, Pict-o-view asks macOS to download it so it can be displayed. This transfer is handled entirely by Apple's iCloud service between your Mac and your iCloud account. Pict-o-view does not transmit your files to us or to any third party.</p>
-  </section>
-
-  <section class="section">
-    <h2>Sharing, copying, and editing</h2>
-    <p>When you use the Share menu (AirDrop, Messages, Mail, and so on), your file goes directly from your Mac to the destination you choose, handled by macOS — Pict-o-view never uploads it anywhere. Copy and paste use the standard macOS clipboard on your device. Rotate and crop edits are <em>non-destructive</em>: they never modify your original file and are stored only as small local records in the app's container.</p>
-  </section>
-
-  <section class="section">
-    <h2>Local storage</h2>
-    <p>To make browsing fast, Pict-o-view stores small thumbnail previews, your non-destructive edits, and app preferences (such as your last-viewed folder, if that setting is on) in its sandboxed container on your Mac (under <code>~/Library/Containers/</code>). This data stays on your device and can be removed at any time by deleting the app.</p>
-  </section>
-
-  <section class="section">
-    <h2>Third-party services</h2>
-    <p>Pict-o-view uses no third-party SDKs, advertising networks, or analytics services. The FFmpeg libraries it bundles for MKV playback run entirely on your Mac and make no network connections; see <a href="support.html#open-source">Open source</a> for the licensing details.</p>
-  </section>
-
-  <section class="section">
-    <h2>Children's privacy</h2>
-    <p>Pict-o-view does not collect any information from anyone, including children under 13.</p>
-  </section>
-
-  <section class="section">
-    <h2>Changes to this policy</h2>
-    <p>If this policy changes, the updated version will be posted at this URL with a new “Last updated” date.</p>
-  </section>
-
-  <section class="section">
-    <h2>Contact</h2>
-    <p>Questions about privacy? Email <a href="mailto:mugilanm7@gmail.com">mugilanm7@gmail.com</a>.</p>
-  </section>
 </main>
 
 <footer class="site-footer">
