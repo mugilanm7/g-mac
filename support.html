@@ -44,7 +44,14 @@
   <p>Files kept in iCloud are downloaded on demand when you open them. Browsing a folder won't download your whole library — only the items you open.</p>
 
   <p class="q">Which formats are supported?</p>
-  <p>Common images (JPEG, PNG, HEIC, TIFF, animated GIF, WebP, BMP), camera RAW (CR2/CR3, NEF, ARW, DNG, RAF, ORF and more), and video (MOV, MP4, M4V). Some older containers such as AVI or MPEG-1 use codecs macOS can't decode — those show a "can't be played" notice with a button to reveal the file in Finder.</p>
+  <p>Common images (JPEG, PNG, HEIC, TIFF, animated GIF, WebP, BMP) and camera RAW (CR2/CR3, NEF, ARW, DNG, RAF, ORF and more).</p>
+  <p>For video: MOV, MP4 and M4V play through macOS, and <strong>MKV plays through Pict-o-view's own built-in engine</strong> — see the next question. Other containers (AVI, MPG/MPEG, 3GP, and TS/MTS/M2TS camcorder files) are listed and play whenever macOS can decode what's inside them, which is usually the case for ordinary H.264 recordings. Formats macOS has no decoder for at all — WebM/VP9, OGV, FLV, WMV, VOB — are still shown in the grid so you can find and manage the files, but opening one gives a plain "can't be played" notice with a button to reveal it in Finder, plus a suggestion to try IINA or VLC.</p>
+
+  <p class="q">How does MKV playback work?</p>
+  <p>macOS can't open the MKV container, so Pict-o-view reads it itself. The file is un-packed in memory as it plays and the video is handed straight to your Mac's hardware decoder, which means <strong>playback starts immediately — there's no conversion step, no temporary copy, and nothing is written to your disk.</strong> Your original file is never modified. 4K HEVC and H.264 both play smoothly, and because the decoding is done in hardware the fans stay quiet.</p>
+
+  <p class="q">Can I switch audio tracks in a multi-language film?</p>
+  <p>Yes. Every track in the file is listed in the <strong>Audio</strong> menu, labelled with its language, format, channel count and bitrate — so two English tracks are still tellable apart. 5.1 surround (AC-3 and E-AC-3) plays too, as do AAC and MP3 tracks. <kbd>⇧⌘M</kbd> mutes, and <kbd>⌘↑</kbd>/<kbd>⌘↓</kbd> step the volume.</p>
 
   <p class="q">How do I zoom?</p>
   <p>Hold <kbd>⌃</kbd> and scroll (trackpad or mouse wheel), use the <kbd>+</kbd>/<kbd>−</kbd> keys or the zoom buttons, and press <kbd>0</kbd> or double-click to fit. When zoomed in, drag the photo to pan.</p>
@@ -67,6 +74,21 @@
   <p class="q">How do I share a photo?</p>
   <p>Select photos and click Share in the toolbar, or right-click any photo — in the grid or the viewer — and choose Share to send via AirDrop, Messages, Mail, and more.</p>
 
+  <h2>Culling a shoot</h2>
+
+  <p class="q">What is cull mode?</p>
+  <p>It's a review pass for going through a shoot quickly. Choose <strong>Cull ▸ Start Culling</strong> (<kbd>⌘K</kbd>) or click the checklist button in the viewer, then mark each photo as you look at it: <kbd>P</kbd> to keep, <kbd>X</kbd> to reject, <kbd>U</kbd> to clear the mark. Keep and reject advance to the next photo on their own, and a small HUD keeps a running count of what's left. The keys are only live in this mode, so ordinary browsing is unaffected — press <kbd>Esc</kbd> or click Done to leave.</p>
+  <p>Prefer the mouse? The three actions on the HUD are buttons as well as hints, so a whole pass can be done by clicking. You can also skip cull mode entirely and right-click any photo — or a whole selection — to choose Keep, Reject or Unmark.</p>
+
+  <p class="q">Can I change the culling keys?</p>
+  <p>Yes — <kbd>P</kbd>, <kbd>X</kbd> and <kbd>U</kbd> are just the defaults. Rebind any of them in Settings (<kbd>⌘,</kbd>) ▸ Culling, where you can also let videos play while you cull and choose whether marks appear on thumbnails and in the folder tree.</p>
+
+  <p class="q">What can I do with the marks afterwards?</p>
+  <p>Back in the grid, the Cull menu filters the folder to Kept, Rejected or Unmarked, and the sidebar shows at a glance which folders are untouched, part-done or fully culled. From there you can send every keeper to a folder you choose (<strong>Move Kept to…</strong>), sweep the rejects into a "Rejected" subfolder or the Trash, or export the whole list of decisions as a CSV. Marks travel with your files when you move or rename them.</p>
+
+  <p class="q">Are my marks kept between launches?</p>
+  <p>Yes. Marks are saved on your Mac and restored the next time you open the app, so a long cull can be done over several sittings. <strong>Clear Marks in This Folder</strong> starts a folder over, and you get eight seconds to undo that if you didn't mean it.</p>
+
   <h2>Keyboard shortcuts</h2>
   <p>
     <kbd>←</kbd>/<kbd>→</kbd> previous/next ·
@@ -76,11 +98,16 @@
     <kbd>⌥⌘T</kbd> show/hide controls ·
     <kbd>⌃⌘F</kbd> full screen ·
     <kbd>[</kbd>/<kbd>]</kbd> video speed ·
+    <kbd>⇧⌘M</kbd> mute · <kbd>⌘↑</kbd>/<kbd>⌘↓</kbd> volume ·
+    <kbd>⌘K</kbd> start culling · <kbd>P</kbd>/<kbd>X</kbd>/<kbd>U</kbd> keep/reject/unmark while culling ·
     <kbd>⌘C</kbd>/<kbd>⌘V</kbd> copy/paste ·
     <kbd>⌘A</kbd> select all · <kbd>⌫</kbd> move to Trash ·
     <kbd>⌘0</kbd> reopen main window ·
     <kbd>⇧⌘P</kbd> show/hide All Photos ·
     <kbd>⌘O</kbd> add folder · <kbd>⌘,</kbd> settings · <kbd>⌘?</kbd> help.
   </p>
+  <h2>Open source</h2>
+  <p>MKV playback uses three <a href="https://ffmpeg.org">FFmpeg</a> libraries — libavformat, libavcodec and libavutil — to read the container and separate its streams; the decoding itself is done by macOS. They are dynamically linked, unmodified, and licensed under the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License, version 2.1</a>, whose full text is included in the app under Help ▸ Licence &amp; Source Offer.</p>
+  <p>The libraries are built from unmodified FFmpeg sources with a demux-only configuration. For a copy of that source and the exact configure flags used, email <a href="mailto:mugilanm7@gmail.com?subject=Pict-o-view%20FFmpeg%20source%20request">mugilanm7@gmail.com</a> and it will be sent to you at no charge.</p>
 </body>
 </html>
