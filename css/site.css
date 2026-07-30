@@ -201,21 +201,13 @@ main {
   text-decoration: none;
 }
 
+/* The app icon already carries its own rounded-square shape and shadow in
+   the PNG, so it drops in as a plain <img> — no background or radius here. */
 .brand-mark {
-  width: 26px;
-  height: 26px;
-  border-radius: 7px;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(145deg, #45b0ff, #0a63d6 55%, #6a4bd6);
-  box-shadow: var(--shadow-sm);
+  width: 30px;
+  height: 30px;
   flex: none;
-}
-
-.brand-mark svg {
-  width: 15px;
-  height: 15px;
+  display: block;
 }
 
 .site-nav {
@@ -308,6 +300,13 @@ main {
 .hero {
   padding: clamp(48px, 9vw, 96px) 0 8px;
   text-align: center;
+}
+
+.hero-icon {
+  width: clamp(88px, 14vw, 120px);
+  height: auto;
+  margin: 0 auto 1.4rem;
+  display: block;
 }
 
 .hero h1 {
