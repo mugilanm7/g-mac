@@ -146,7 +146,7 @@
           <span class="tile t-blue"><svg aria-hidden="true"><use href="#i-grid"></use></svg></span>
           <div>
             <h3>Make it your default viewer</h3>
-            <p>In Finder, select a photo, press <kbd>⌘I</kbd>, choose Pict-o-view under “Open with”, and click Change All. Repeat once for a video to cover movies too.</p>
+            <p>Open Settings (<kbd>⌘,</kbd>) ▸ General and click <strong>Make Pict-o-view the Default</strong> — photos, camera RAW and videos all switch at once. To change a single type, select a file in Finder, press <kbd>⌘I</kbd>, choose an app under “Open with”, and click Change All.</p>
           </div>
         </li>
       </ul>
@@ -159,14 +159,14 @@
           <span class="tile t-indigo"><svg aria-hidden="true"><use href="#i-grid"></use></svg></span>
           <div>
             <h3>The photo grid</h3>
-            <p>Double-click a thumbnail (or press <kbd>Return</kbd>) to open it. Sort by name, date, or size with the Sort button in the toolbar, and group by type or pool subfolders from the View menu; search by filename in the toolbar.</p>
+            <p>Double-click a thumbnail (or press <kbd>Return</kbd>) to open it. Sort by name, date taken, date modified, or size with the Sort button in the toolbar, and group by type or pool subfolders from the View menu; search by filename in the toolbar. <strong>Date Taken</strong> uses the capture time each camera or phone recorded, so shots from several devices fall into one timeline; files without one sort by their modified date.</p>
           </div>
         </li>
         <li class="feature">
           <span class="tile t-indigo"><svg aria-hidden="true"><use href="#i-sliders"></use></svg></span>
           <div>
             <h3>Select &amp; organise</h3>
-            <p>Click, <kbd>⇧</kbd>-click, and <kbd>⌘</kbd>-click to select photos (<kbd>⌘A</kbd> for all). Right-click for actions: rename, move to another folder, move to Trash, reveal in Finder — or drag files straight out to any app.</p>
+            <p>Click, <kbd>⇧</kbd>-click, and <kbd>⌘</kbd>-click to select photos (<kbd>⌘A</kbd> for all; <kbd>⇧</kbd>-arrows extend the selection). Press <kbd>Space</kbd> to Quick Look the selection. Right-click for actions: open with another app, rename, duplicate (<kbd>⌘D</kbd>), move to another folder, move to Trash (<kbd>⌘⌫</kbd>), show in Finder, print, set as desktop picture — or drag the whole selection straight out to any app. Every change can be undone with <kbd>⌘Z</kbd>.</p>
           </div>
         </li>
         <li class="feature">
@@ -180,7 +180,7 @@
           <span class="tile t-indigo"><svg aria-hidden="true"><use href="#i-tree"></use></svg></span>
           <div>
             <h3>Drag between folders</h3>
-            <p>Drag photos from the grid onto any folder in the sidebar to copy them there. Hover over a collapsed folder for a moment and it springs open, so you can drop into subfolders.</p>
+            <p>Drag photos from the grid onto any folder in the sidebar to move them there — or hold <kbd>⌥</kbd> to copy instead (photos on another drive are always copied), just like Finder. <kbd>⌘Z</kbd> undoes a move. Hover over a collapsed folder for a moment and it springs open, so you can drop into subfolders. <strong>File ▸ New Folder</strong> (<kbd>⇧⌘N</kbd>) makes a new one.</p>
           </div>
         </li>
         <li class="feature">
@@ -214,14 +214,21 @@
           <span class="tile t-orange"><svg aria-hidden="true"><use href="#i-eye"></use></svg></span>
           <div>
             <h3>Zoom &amp; pan</h3>
-            <p>Hold <kbd>⌃</kbd> and scroll to zoom smoothly (or use <kbd>+</kbd> / <kbd>−</kbd> / <kbd>0</kbd>). When zoomed in, drag the photo to pan. Double-click to snap back to fit.</p>
+            <p>Hold <kbd>⌃</kbd> and scroll to zoom smoothly (or use <kbd>+</kbd> / <kbd>−</kbd> / <kbd>0</kbd>). When zoomed in, drag the photo to pan. Double-click to snap back to fit. Zoom goes well past 100% of the photo's own pixels: as you zoom in, Pict-o-view loads the full-resolution image (sized to your Mac's memory), and at extreme magnification shows each pixel as a crisp square.</p>
+          </div>
+        </li>
+        <li class="feature">
+          <span class="tile t-orange"><svg aria-hidden="true"><use href="#i-eye"></use></svg></span>
+          <div>
+            <h3>HDR photos</h3>
+            <p>Photos with an HDR gain map — from iPhone, Android (Ultra HDR) or Lightroom — show their full brightness on HDR-capable displays, such as a MacBook Pro's XDR screen. On other displays they look exactly as before.</p>
           </div>
         </li>
         <li class="feature">
           <span class="tile t-orange"><svg aria-hidden="true"><use href="#i-eye"></use></svg></span>
           <div>
             <h3>Distraction-free viewing</h3>
-            <p>Single-click the photo to hide every control; click again to bring them back (also View ▸ Show / Hide Controls, <kbd>⌥⌘T</kbd>).</p>
+            <p>Single-click the photo to hide every control; click again to bring them back (also View ▸ Show / Hide Controls, <kbd>⇧⌘H</kbd>).</p>
           </div>
         </li>
         <li class="feature">
@@ -235,7 +242,7 @@
           <span class="tile t-orange"><svg aria-hidden="true"><use href="#i-sliders"></use></svg></span>
           <div>
             <h3>Filmstrip &amp; info</h3>
-            <p>Press <kbd>F</kbd> for a thumbnail strip to jump around the folder, and <kbd>I</kbd> for the info panel: dimensions, file size, camera, and date taken — with the full EXIF and metadata tree below that. The grid's Info button opens the same inspector.</p>
+            <p>Press <kbd>F</kbd> for a thumbnail strip to jump around the folder — at the bottom or down the left side (right-click the strip, or Settings ▸ General) — and <kbd>I</kbd> for the info panel: dimensions, file size, camera, and date taken — with the full EXIF and metadata tree below that. The grid's Info button opens the same inspector.</p>
           </div>
         </li>
       </ul>
@@ -284,6 +291,13 @@
           <div>
             <h3>Mark from the grid</h3>
             <p>You don't have to be in cull mode: right-click any photo — or a whole selection — and choose Keep, Reject, or Unmark. Each entry greys out when it would change nothing, so the menu also tells you where the photos already stand.</p>
+          </div>
+        </li>
+        <li class="feature">
+          <span class="tile t-mint"><svg aria-hidden="true"><use href="#i-eye"></use></svg></span>
+          <div>
+            <h3>Compare side by side</h3>
+            <p>Select two to four photos and press <kbd>C</kbd> (or right-click ▸ <strong>Compare</strong>, or <strong>Cull ▸ Compare</strong>) to see them side by side. Zooming or dragging any one moves them all, so you can check the same detail — focus, eyes, a blink — across every frame. Click a photo, or use the arrow keys, to focus it, then keep or reject it with your culling keys.</p>
           </div>
         </li>
         <li class="feature">
@@ -382,21 +396,27 @@
       <h2><span class="tile t-blue"><svg aria-hidden="true"><use href="#i-keyboard"></use></svg></span> Keyboard shortcuts</h2>
       <div class="keys">
         <div class="krow"><span><kbd>←</kbd><span class="sep">/</span><kbd>→</kbd></span><span>Previous / next photo</span></div>
-        <div class="krow"><span><kbd>Space</kbd></span><span>Play/pause video, or start/stop a slideshow</span></div>
+        <div class="krow"><span><kbd>Space</kbd></span><span>In the viewer: play/pause video, or start/stop a slideshow · in the grid: Quick Look</span></div>
         <div class="krow"><span><kbd>⌃</kbd> scroll</span><span>Zoom in / out (also <kbd>+</kbd> / <kbd>−</kbd>, <kbd>0</kbd> to fit)</span></div>
         <div class="krow"><span><kbd>I</kbd><kbd>F</kbd><kbd>E</kbd></span><span>Info panel · Filmstrip · Edit</span></div>
         <div class="krow"><span><kbd>P</kbd><kbd>X</kbd><kbd>U</kbd></span><span>While culling: Keep · Reject · Unmark</span></div>
         <div class="krow"><span><kbd>⌘K</kbd></span><span>Start culling the current folder</span></div>
-        <div class="krow"><span><kbd>⌥⌘T</kbd></span><span>Show / hide viewer controls (or single-click)</span></div>
+        <div class="krow"><span><kbd>C</kbd></span><span>Compare the selected photos (2–4) side by side</span></div>
+        <div class="krow"><span><kbd>⇧⌘H</kbd></span><span>Show / hide viewer controls (or single-click)</span></div>
         <div class="krow"><span><kbd>⌃⌘F</kbd></span><span>Full screen</span></div>
         <div class="krow"><span><kbd>[</kbd><kbd>]</kbd></span><span>Video slower · faster</span></div>
         <div class="krow"><span><kbd>⇧⌘M</kbd></span><span>Mute / unmute</span></div>
         <div class="krow"><span><kbd>⌘↑</kbd><kbd>⌘↓</kbd></span><span>Volume up · down</span></div>
         <div class="krow"><span><kbd>⌘C</kbd><kbd>⌘V</kbd></span><span>Copy · paste files</span></div>
         <div class="krow"><span><kbd>⌘A</kbd></span><span>Select all in the grid</span></div>
-        <div class="krow"><span><kbd>⌫</kbd></span><span>Move selection to Trash</span></div>
+        <div class="krow"><span><kbd>⌘Z</kbd><kbd>⇧⌘Z</kbd></span><span>Undo · redo (marks, edits, moves, renames, Trash)</span></div>
+        <div class="krow"><span><kbd>⌘+</kbd><kbd>⌘−</kbd><kbd>⌘9</kbd></span><span>Zoom in · out · to fit</span></div>
+        <div class="krow"><span><kbd>⌘L</kbd><kbd>⌘R</kbd></span><span>Rotate left · right</span></div>
+        <div class="krow"><span><kbd>⌘D</kbd></span><span>Duplicate</span></div>
+        <div class="krow"><span><kbd>⌘⌫</kbd></span><span>Move to Trash (<kbd>⌫</kbd> alone asks first)</span></div>
+        <div class="krow"><span><kbd>⇧⌘N</kbd></span><span>New folder</span></div>
+        <div class="krow"><span><kbd>⌘P</kbd></span><span>Print</span></div>
         <div class="krow"><span><kbd>⌘0</kbd></span><span>Reopen the main window (also Window ▸ All Photos, or click the Dock icon)</span></div>
-        <div class="krow"><span><kbd>⇧⌘P</kbd></span><span>Show / hide the All Photos browser</span></div>
         <div class="krow"><span><kbd>⌘O</kbd></span><span>Add folder</span></div>
         <div class="krow"><span><kbd>⌘,</kbd></span><span>Settings</span></div>
         <div class="krow"><span><kbd>⌘?</kbd></span><span>This help, inside the app</span></div>

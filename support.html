@@ -136,7 +136,7 @@
         </div>
         <div class="faq-item">
           <h3>How do I make Pict-o-view my default photo viewer?</h3>
-          <p>In Finder, select a photo, press <kbd>⌘I</kbd> (Get Info), choose Pict-o-view under “Open with,” then click “Change All…”. Repeat once for a video file to make it the default for movies too.</p>
+          <p>Open Settings (<kbd>⌘,</kbd>) ▸ General and click <strong>Make Pict-o-view the Default</strong>. Photos, camera RAW files and videos all switch in one go, and the panel shows which app opens each kind today. To set or undo a single file type, select a file of that type in Finder, press <kbd>⌘I</kbd> (Get Info), choose an app under “Open with,” then click “Change All…”.</p>
         </div>
         <div class="faq-item">
           <h3>I opened a single photo — why do I only see that one?</h3>
@@ -180,8 +180,12 @@
           <p>Hold <kbd>⌃</kbd> and scroll (trackpad or mouse wheel), use the <kbd>+</kbd>/<kbd>−</kbd> keys or the zoom buttons, and press <kbd>0</kbd> or double-click to fit. When zoomed in, drag the photo to pan.</p>
         </div>
         <div class="faq-item">
+          <h3>Can I sort photos by the date they were taken?</h3>
+          <p>Yes — choose <strong>Date Taken</strong> from the Sort button in the toolbar. It uses the capture time stored in each photo (and the recording date in videos), so a shoot mixing several cameras and a phone lines up as one timeline, which also keeps slideshows in order. Screenshots and other files without a capture time fall back to their modified date.</p>
+        </div>
+        <div class="faq-item">
           <h3>How do I hide the buttons while viewing?</h3>
-          <p>Single-click the photo — every control disappears for a completely clean view. Click again (or press <kbd>⌥⌘T</kbd>, or View ▸ Show / Hide Controls) to bring them back.</p>
+          <p>Single-click the photo — every control disappears for a completely clean view. Click again (or press <kbd>⇧⌘H</kbd>, or View ▸ Show / Hide Controls) to bring them back.</p>
         </div>
         <div class="faq-item">
           <h3>Does editing change my original photo?</h3>
@@ -193,7 +197,7 @@
         </div>
         <div class="faq-item">
           <h3>I closed the main window — how do I get it back?</h3>
-          <p>Three ways: choose <strong>Window ▸ All Photos</strong> (or press <kbd>⌘0</kbd>), click the Pict-o-view icon in the Dock, or press <kbd>⇧⌘P</kbd>. Closing the window never quits the app or loses your folders.</p>
+          <p>Two ways: choose <strong>Window ▸ All Photos</strong> (or press <kbd>⌘0</kbd>), or click the Pict-o-view icon in the Dock. Closing the window never quits the app or loses your folders.</p>
         </div>
         <div class="faq-item">
           <h3>Can Pict-o-view reopen where I left off?</h3>
@@ -215,6 +219,10 @@
           <p>Prefer the mouse? The three actions on the HUD are buttons as well as hints, so a whole pass can be done by clicking. You can also skip cull mode entirely and right-click any photo — or a whole selection — to choose Keep, Reject or Unmark.</p>
         </div>
         <div class="faq-item">
+          <h3>Can I compare similar shots side by side?</h3>
+          <p>Select two to four photos and press <kbd>C</kbd> (or right-click ▸ <strong>Compare</strong>, or <strong>Cull ▸ Compare</strong>) to see them side by side. Zooming or dragging any one moves them all, so you can check the same detail — focus, eyes, a blink — across every frame. Click a photo, or use the arrow keys, to focus it, then keep or reject it with your culling keys.</p>
+        </div>
+        <div class="faq-item">
           <h3>Can I change the culling keys?</h3>
           <p>Yes — <kbd>P</kbd>, <kbd>X</kbd> and <kbd>U</kbd> are just the defaults. Rebind any of them in Settings (<kbd>⌘,</kbd>) ▸ Culling, where you can also let videos play while you cull and choose whether marks appear on thumbnails and in the folder tree.</p>
         </div>
@@ -233,21 +241,24 @@
       <h2><span class="tile t-indigo"><svg aria-hidden="true"><use href="#i-keyboard"></use></svg></span> Keyboard shortcuts</h2>
       <div class="keys">
         <div class="krow"><span><kbd>←</kbd><kbd>→</kbd></span><span>Previous / next</span></div>
-        <div class="krow"><span><kbd>Space</kbd></span><span>Play/pause a video, or run a slideshow</span></div>
+        <div class="krow"><span><kbd>Space</kbd></span><span>Viewer: play/pause or slideshow · grid: Quick Look</span></div>
         <div class="krow"><span><kbd>⌃</kbd> scroll</span><span>Zoom (also <kbd>+</kbd> <kbd>−</kbd> <kbd>0</kbd> to fit)</span></div>
         <div class="krow"><span><kbd>I</kbd><kbd>F</kbd><kbd>E</kbd></span><span>Info · Filmstrip · Edit</span></div>
-        <div class="krow"><span><kbd>⌥⌘T</kbd></span><span>Show / hide controls</span></div>
+        <div class="krow"><span><kbd>⇧⌘H</kbd></span><span>Show / hide controls</span></div>
         <div class="krow"><span><kbd>⌃⌘F</kbd></span><span>Full screen</span></div>
         <div class="krow"><span><kbd>[</kbd><kbd>]</kbd></span><span>Video slower / faster</span></div>
         <div class="krow"><span><kbd>⇧⌘M</kbd></span><span>Mute</span></div>
         <div class="krow"><span><kbd>⌘↑</kbd><kbd>⌘↓</kbd></span><span>Volume</span></div>
         <div class="krow"><span><kbd>⌘K</kbd></span><span>Start culling</span></div>
+        <div class="krow"><span><kbd>C</kbd></span><span>Compare 2–4 selected photos</span></div>
         <div class="krow"><span><kbd>P</kbd><kbd>X</kbd><kbd>U</kbd></span><span>Keep / reject / unmark while culling</span></div>
         <div class="krow"><span><kbd>⌘C</kbd><kbd>⌘V</kbd></span><span>Copy / paste</span></div>
         <div class="krow"><span><kbd>⌘A</kbd></span><span>Select all</span></div>
-        <div class="krow"><span><kbd>⌫</kbd></span><span>Move to Trash</span></div>
+        <div class="krow"><span><kbd>⌘Z</kbd></span><span>Undo (marks, edits, moves, Trash)</span></div>
+        <div class="krow"><span><kbd>⌘⌫</kbd></span><span>Move to Trash (<kbd>⌫</kbd> asks first)</span></div>
+        <div class="krow"><span><kbd>⌘D</kbd></span><span>Duplicate</span></div>
+        <div class="krow"><span><kbd>⌘P</kbd></span><span>Print</span></div>
         <div class="krow"><span><kbd>⌘0</kbd></span><span>Reopen the main window</span></div>
-        <div class="krow"><span><kbd>⇧⌘P</kbd></span><span>Show / hide All Photos</span></div>
         <div class="krow"><span><kbd>⌘O</kbd></span><span>Add folder</span></div>
         <div class="krow"><span><kbd>⌘,</kbd></span><span>Settings</span></div>
         <div class="krow"><span><kbd>⌘?</kbd></span><span>Help</span></div>
